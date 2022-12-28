@@ -11,9 +11,9 @@ jobs:
       # Клонируем репозиторий
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
-    with:
-      node-version: '16.x'
-      cache: 'npm'
+        with:
+          node-version: '16.x'
+          cache: 'npm'
       # Устанавливаем Node.js
       # Ставим зависимости
       - run: make setup
